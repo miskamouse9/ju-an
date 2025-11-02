@@ -10,10 +10,10 @@
   <!-- Secret Code Screen -->
   <div id="lock-screen" class="center">
     <div class="lock-card">
-      <h2>💌 Enter the Secret Code</h2>
+      <h2>💌 Wazz the password?</h2>
       <input id="codeInput" type="password" placeholder="Enter code..." />
       <button id="unlockBtn">Unlock</button>
-      <p class="hint">Hint: our special date? 😉</p>
+      <p class="hint">Hint: Secret whahaha dapat alam mo 🙂</p>
       <p id="error" class="error"></p>
     </div>
   </div>
@@ -21,16 +21,16 @@
   <!-- Hidden Content -->
   <main id="main-content" class="hidden">
     <section class="card">
-      <h1>Happy Anniversary, [Boyfriend’s Name] ❤️</h1>
-      <p class="subtitle">[X] years of love and laughter.</p>
+      <h1>Happy Anniversary, mahal ko! 🤍</h1>
+      <p class="subtitle">One year na tayo, luh?</p>
       <div class="message">
-        <p>Every day with you is my favorite adventure.</p>
+        <p>EEvery single day with you has been an adventure.</p>
         <p>Thank you for loving me in ways I never knew I needed.  
         Here’s to more laughter, warmth, and memories together.</p>
-        <p class="signature">— [Your Name]</p>
+        <p class="signature">— Mai</p>
       </div>
       <button id="celebrateBtn" class="btn">Celebrate 🎉</button>
-      <footer class="small"><p>[Month Day, Year]</p></footer>
+      <footer class="small"><p>25 November 2025</p></footer>
     </section>
   </main>
 
@@ -43,7 +43,7 @@
     const errorText = document.getElementById('error');
 
     // ✨ CHANGE THIS CODE to your secret password (e.g. “1125”)
-    const SECRET_CODE = "1125";
+    const SECRET_CODE = "1104";
 
     unlockBtn.addEventListener('click', () => {
       if (codeInput.value === SECRET_CODE) {
@@ -51,11 +51,12 @@
         mainContent.classList.remove('hidden');
         startConfetti();
       } else {
-        errorText.textContent = "Wrong code, try again 💔";
+        errorText.textContent = "❌ code, honey limon. Ulet pleasseeee 💔";
       }
     });
 
     document.getElementById('celebrateBtn').addEventListener('click', startConfetti);
   </script>
 </body>
+
 </html>
